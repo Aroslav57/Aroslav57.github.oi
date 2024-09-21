@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona główna</title>
+    <style>
+        body {
+            color: gray;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Najgłówek pierwszego stopnia</h1>
+    <p>Menu składające się z 3 linków umieszczonych w liście nienumerowanej:</p>
+    
+    <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+    </ul>
+
+    <h2>Zdjęcie autora</h2>
+    <img src="zdjecie_autora.jpg" alt="Zdjęcie autora" width="200">
+
+    <p>Krótki opis autora umieszczony w paragrafie.</p>
+
+    <h2>Podstrona 1 - Życzenia</h2>
+    <p>Tablica z bibliografią:</p>
+    
+    <table>
+        <tr>
+            <th>Autor</th>
+            <th>Tytuł</th>
+            <th>Rok</th>
+        </tr>
+        <tr>
+            <td>Autor 1</td>
+            <td>Tytuł 1</td>
+            <td>2023</td>
+        </tr>
+        <tr>
+            <td>Autor 2</td>
+            <td>Tytuł 2</td>
+            <td>2022</td>
+        </tr>
+    </table>
+
+    <h2>Podstrona 2</h2>
+    <p>Tablica zawierająca najważniejsze utwory i razem ze zdjęciami do nich:</p>
+    
+    <table>
+        <tr>
+            <th>Utwór</th>
+            <th>Zdjęcie</th>
+        </tr>
+        <tr>
+            <td>Utwór 1</td>
+            <td><img src="utwor1.jpg" alt="Zdjęcie 1" width="100"></td>
+        </tr>
+        <tr>
+            <td>Utwór 2</td>
+            <td><img src="utwor2.jpg" alt="Zdjęcie 2" width="100"></td>
+        </tr>
+    </table>
+
+    <h2>Podstrona 3</h2>
+    <p>Formularz kontaktowy do autora strony oraz miejsce pokazujące adres autora:</p>
+    
+    <form action="/submit" method="post">
+        <label for="name">Imię:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="message">Wiadomość:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Wyślij">
+    </form>
+    
+
+</body>
+</html>
